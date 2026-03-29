@@ -1,0 +1,18 @@
+# AI Resume Builder — Requirements
+# Install with: pip install -r requirements.txt
+# Run with:     streamlit run app.py
+
+# ── Core ──
+streamlit>=1.35.0
+python-docx>=1.1.2
+lxml>=5.2.2
+
+# ── AI: Groq (Llama-3.3-70b) via OpenAI-compatible client ──
+# Set GROQ_API_KEY env variable to unlock AI features.
+# Get your key at: https://console.groq.com
+# App runs fully without it (falls back to template logic).
+openai>=1.30.0
+
+# ── NLP: TF-IDF ATS scoring ──
+# App runs without it (falls back to keyword overlap).
+scikit-learn>=1.4.0
